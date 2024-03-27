@@ -1,6 +1,6 @@
 :root {
 	--primary-color: #f8bb12;
-	--text-color: ##323232;
+	--text-color: #323232;
 	--black-color: #000;
 	--white-color: #fff;
 	--light-txt: #767676;
@@ -323,17 +323,90 @@ border: 2px solid var(--white-color);
 =================================================*/
 
 /* single page =================================================*/
+.all-page .col-lg-8{
+    box-shadow: 0 0 4px -1px var(--light-gray);
+	border-radius: var(--radius);
+}
+.post-details span a{
+
+}
 
 /* table of content___start*/
 /* table of content___end*/
 
+/* list */
+.all-page p, .all-page ol li, .all-page ul li {
+    line-height: 1.8;
+}
+/* list */
+
+/* table */
+
+.wp-block-table table thead {
+    border-bottom: 2px solid #cfd2d9;
+}
+.wp-block-table table th {
+    font-size: var(--fs-1);
+    font-weight: var(--font-700);
+    color: var(--black-color);
+}
+.wp-block-table table :is(td, th) {
+    border: 1px solid #dddddd;
+}
+/* table */
+
 /* widget */
 /* widget */
 
 /* pros and cons */
+.pn-header {
+    font-size: var(--fs-2);
+	color: var(--black-color);
+    font-weight:var(--font-700);
+	border-bottom: 2px solid #ec1d27;
+    width: fit-content;
+    padding-bottom: 9px;
+    margin-bottom: 12px;
+}
+
+.widget-pn-container .widget-pn-col:first-child .pn-header {
+ 	border-bottom: 2px solid #70ad46;
+}
+.widget-pn-col{
+	box-shadow: 0 0 4px -1px var(--light-gray);
+	border-bottom: 3px solid var(--primary-color);
+}
+.widget-pn-container ul li{
+	list-style: none;
+	position: relative;
+	margin-left: 10px;
+}
+
+.widget-pn-container .widget-pn-col:first-child  ul li::before {
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 18.286' width='16' height='16'%3E%3Cpath fill='%2370ad46' d='M15.664 3.764a1.146 1.146 0 0 1 0 1.618l-9.143 9.143a1.146 1.146 0 0 1-1.618 0L.332 9.954A1.145 1.145 0 0 1 1.95 8.336l3.764 3.76 8.336-8.332a1.146 1.146 0 0 1 1.618 0z'/%3E%3C/svg%3E");
+}
+.widget-pn-container ul li::before{
+ content: "";
+ margin-right: 10px;
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 21.333' width='16' height='16'%3E%3Cpath fill='%23ec1d27' d='M14.275 6.275a1.334 1.334 0 0 0-1.887-1.887L8 8.779 3.608 4.392a1.334 1.334 0 0 0-1.887 1.887l4.391 4.388-4.387 4.391a1.334 1.334 0 0 0 1.887 1.887L8 12.554l4.392 4.387a1.334 1.334 0 0 0 1.887-1.887l-4.392-4.387z'/%3E%3C/svg%3E");
+ width: 16px;
+ height: 16px;
+ position: absolute;
+ left: -23px;
+ top: 6px;
+}
 /* pros and cons */
 
 /* faq */
+.accordions details {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+.accordions details summary {
+    font-weight: var(--font-700);
+    color: var(--black-color);
+    line-height: 1.8;
+}
 /* faq */
 
 /* single page =================================================*/
@@ -508,7 +581,7 @@ color: var(--white-color);
 
 }
 @media screen and (max-width:600px) {
-	[class*="d-grid"]{
+	.widget-pn-container, [class*="d-grid"]{
 		grid-template-columns: auto;
 	}
 	.ribbon-boxes > div:nth-child(even){

@@ -104,3 +104,17 @@ document.addEventListener("click", (e) => {
   }
 });
 // my js dropdown
+
+// accordion code start
+const detailsElements = document.querySelectorAll("details");
+const summaryElements = document.querySelectorAll("summary");
+
+summaryElements.forEach((summary, index) => {
+    summary.addEventListener("click", () => {
+      detailsElements.forEach((details, i) => {
+        if (i !== index) {
+          details.open = false;
+        }
+      });
+    });
+});
