@@ -118,3 +118,25 @@ summaryElements.forEach((summary, index) => {
       });
     });
 });
+
+
+// table of content
+document.addEventListener('DOMContentLoaded', function() {
+const tableToggle = document.querySelector(".thead");
+const table_list = document.querySelector(".table-list");
+const list_drop = document.querySelector(".list-drop");
+const subList_drop = document.querySelector(".list-drop ul");
+let icon1 ='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0.25 0 20.25 20.325"><path fill="#f8bb12" d="M10.375 0A10.125 10.125 0 0 1 20.5 10.125v.075a10.125 10.125 0 0 1-10.125 10.125A10.125 10.125 0 0 1 .25 10.2v-.075A10.125 10.125 0 0 1 10.375 0"/><path stroke="#fff" stroke-linecap="round" d="M13.625 10.662h-6.5"/></svg>';
+let icon2 ='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path fill="#f8bb12" d="M9 18a9 9 0 1 0 0 -18 9 9 0 1 0 0 18m-0.844 -5.906v-2.25h-2.25c-0.468 0 -0.844 -0.376 -0.844 -0.844s0.376 -0.844 0.844 -0.844h2.25v-2.25c0 -0.468 0.376 -0.844 0.844 -0.844s0.844 0.376 0.844 0.844v2.25h2.25c0.468 0 0.844 0.376 0.844 0.844s-0.376 0.844 -0.844 0.844h-2.25v2.25c0 0.468 -0.376 0.844 -0.844 0.844s-0.844 -0.376 -0.844 -0.844"/></svg>';
+
+tableToggle.addEventListener("click", ()=>{
+  tableToggle.classList.toggle('show-list');
+});
+list_drop.addEventListener("click", ()=>{
+  subList_drop.style.display =subList_drop.style.display === "block" ? "none" : "block";
+});
+subList_drop.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+});
+
