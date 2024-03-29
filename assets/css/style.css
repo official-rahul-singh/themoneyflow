@@ -109,7 +109,7 @@ header .dropdown:hover>ul {
 .search-btn:hover svg{
 	stroke: var(--primary-color);
 }
-.search-input{
+header .search-input{
 	border-top: 3px solid var(--primary-color);
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 	background-color: var(--white-color);
@@ -165,7 +165,7 @@ header .dropdown:hover>ul {
 .catg a{
 	color: var(--black-color);
 }
-.catg a:hover, a[class*="my-title"]:hover, .post-meta a:hover, ul.table-list li a:hover{
+.catg a:hover, a[class*="my-title"]:hover, .post-meta a:hover{
 	color: var(--primary-color);
 }
 .post-auth img{
@@ -254,13 +254,13 @@ header .dropdown:hover>ul {
 /*#header =================================================*/
 /*#header =================================================*/
 /* single page =================================================*/
-.all-page .col-lg-8 :is(p > a, li > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a){
+.all-page :is(p > a, li > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a), .social-media li a{
 	background: linear-gradient(0deg, var(--primary-color), var(--primary-color)) no-repeat right bottom / 0 var(--bg-h);
 	transition: background-size 350ms;
 	--bg-h: 100%;
 	text-decoration: underline;
 }
-.all-page .col-lg-8 :is(p > a, li > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a):hover {
+.all-page :is(p > a, li > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a):hover, .social-media li a:hover{
 	background-size: 100% var(--bg-h);
 	background-position-x: left;
 	color: var(--black-color);
@@ -327,7 +327,7 @@ ul.table-list li a {
 	color: var(--primary-color);
 	font-size: 18px;
 }
-.all-page p, .all-page ol li, .all-page ul li {
+.all-page ol li, .all-page ul li {
 	line-height: 1.8;
 }
 /* list */
@@ -361,6 +361,7 @@ ul.table-list li a {
 .my-widget-title{
 	font-weight: var(--font-700);
 	color: var(--black-color);
+	font-size: var(--fs-2);
 }
 .my-widget-title::after{
 	background-color: var(--primary-color);
@@ -467,10 +468,9 @@ footer {
 	border-radius: 50%;
 	border: 1px solid var(--primary-color);
 	fill: var(--primary-color);
-	transform: all 0.2s;
 }
 .social-media li a:hover{
-	background-color: var(--primary-color);
+	/* background-color: var(--primary-color); */
 	fill: var(--white-color);
 }
 .footer-nav{
@@ -480,6 +480,34 @@ footer {
 	color: var(--white-color);
 }
 /* footer =================================================*/
+
+/* other pages */
+.btn{
+	border-radius: 45px;
+    padding: 10px 35px;
+    border: 1px solid #161b2d;
+    color: #161b2d;
+	display: inline-block;
+}
+.message-title{
+	font-weight: var(--font-700);
+	font-size: 30px;
+}
+
+.message-pg [class$="title-22"]{
+	margin-bottom: 16px;
+}
+
+/* search not found */
+.message-pg .search-input input{
+	width: 100%;
+}
+.message-pg .search-input form{
+	width: 50%;
+	margin-inline: auto;
+}
+/* search not found */
+/* other pages */
 /* # Responsive Code =================================================*/
 @media screen and (min-width:768px) and (max-width:1023px) {
 	.sec-gap-1 .col-md-5{
@@ -571,14 +599,11 @@ footer {
 		row-gap: 10px;
 		column-gap: 16px;
    }
-	.table-list{
+	.table-list,.all-page .r-bar{
 		display: none;
    }
 	.show-list + .table-list{
 		display: block;
-   }
-	.all-page .r-bar{
-		display: none;
    }
 }
 @media screen and (max-width:600px) {
@@ -607,6 +632,9 @@ footer {
 	.latest-post-list{
 		max-height: 100%;
    }
+   .message-pg .search-input form{
+	width: 100%;
+   }
 }
 @media (min-width: 1025px){
 	.dropdown ul .dropdown ul {
@@ -622,4 +650,32 @@ footer {
 		justify-content: space-between;
 		position: relative;
    }
+}
+
+
+/* contact us */
+/* .contact-us {
+    background-color: #F3F3F3;
+    border-radius: var(--radius);
+	padding: 30px;
+} */
+.contact-us :is(input, textarea) {
+    border-radius: var(--radius);
+    box-shadow: 0px 0px 3px rgb(193 193 193 / 15%);
+	margin-bottom: 16px;
+    padding: 10px 16px;
+}
+.contact-us :is(input, textarea) {
+    width: 100%;
+	background-color: #F3F3F3;
+}
+
+.contact-details .mail-to{
+	background-color: #2b2f3e;
+	padding:10px;
+	border-radius: var(--radius);
+}
+
+.contact-details{
+	margin-top: 16px;
 }

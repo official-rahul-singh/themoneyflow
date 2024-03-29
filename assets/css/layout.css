@@ -95,14 +95,14 @@ header nav ul li {
 	padding-block: 22px;
 }
 /* search */
-.search-form{
+header .search-form{
 	position: relative;
 	user-select: none;
 }
 .search-btn{
 	cursor: pointer;
 }
-.search-input{
+header .search-input{
 	position: absolute;
 	right: 0;
 	top: 46px;
@@ -120,6 +120,8 @@ header nav ul li {
 .search-input button{
 	height: 100%;
 	padding: 12px;
+	display: flex;
+	align-items: center;
 }
 .search-input ::before{
 	content: "";

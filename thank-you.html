@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TheMoneyFlow</title>
+      <!-- preload fonts -->
+      <!-- <link rel="preload" href="assets/fonts/sora-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="assets/fonts/sora-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="assets/fonts/sora-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin> -->
+      <!-- css -->
+      <link rel="stylesheet" href="assets/css/layout.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <!-- favicon -->
+      <link rel="icon" href="assets/img/fav icon.png">
+      <style>
+      /* roboto-slab-regular - latin */
+         @font-face {
+         font-display: swap; 
+         font-family: 'Roboto Slab';
+         font-style: normal;
+         font-weight: 400;
+         src: url('assets/fonts/roboto-slab-v34-latin-regular.woff2') format('woff2');
+         }
+         /* roboto-slab-700 - latin */
+         @font-face {
+         font-display: swap; 
+         font-family: 'Roboto Slab';
+         font-style: normal;
+         font-weight: 700;
+         src: url('assets/fonts/roboto-slab-v34-latin-700.woff2') format('woff2');
+         }
+      </style>
+   </head>
+   <body>
+<!-- header-->
+      <header>
+         <div class="container flex-between">
+            <div class="site-logo">
+               <a href="#"><img src="https://themoneyflow.net/wp-content/uploads/2023/06/logo.webp" alt="" class="img-fluid"></a>
+            </div>
+               <nav>
+                  <ul>
+                     <li>
+                        <a href="index.html">Top 10</a>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#">Troubleshoot</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 448 512">
+                           <path
+                              d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                           </path>
+                        </svg>
+                        <ul>
+                           <li>
+                              <a href="#">How to</a>
+                           </li>
+                           <li>
+                              <a href="#">Reviews</a>
+                           </li>
+                           <li class="dropdown">
+                              <a href="#">PHP &amp; MySQL</a>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 448 512">
+                                 <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                                 </path>
+                              </svg>
+                              <ul>
+                                 <li>
+                                    <a href="#">How to</a>
+                                 </li>
+                                 <li>
+                                    <a href="#">Reviews</a>
+                                 </li>
+                                 <li>
+                                    <a href="#">Guide</a>
+                                 </li>
+                                 <li>
+                                    <a href="#">PHP &amp; MySQL</a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#">How to</a>
+                     </li>
+                     <li>
+                        <a href="#">Reviews</a>
+                     </li>
+                     <li>
+                        <a href="#">Guide</a>
+                     </li>
+                  </ul>
+                  <div class="cancel-btn" onclick="toggleButtons()">
+                     <svg fill="#000" xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 384 512">
+                        <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                        </path>
+                     </svg>
+                  </div>
+               </nav>
+          <div class="search-form">
+            <div class="search-btn">
+               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" fill="none">
+                  <path d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667ZM14 14l-2.9-2.9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  </path>
+               </svg>
+            </div>
+            <div class="search-input">
+               <form action="" class="flex">
+                  <input type="search" name="" id="" placeholder="Search" required="">
+                  <button type="submit">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667ZM14 14l-2.9-2.9" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                     </svg>
+                  </button>
+               </form>
+            </div>
+          </div>
+          <div class="toggle-slide-btn" onclick="toggleButtons()">
+            <svg width="20" height="20" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+               <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
+               </path>
+            </svg>
+         </div>
+         <!-- <div class="doc-overlay"></div> -->
+         </div>
+      </header>
+<!-- header-->
+
+<div class="container mt-40">
+    <p id="breadcrumbs"><span><span class="breadcrumb_last" aria-current="page">You searched for 498489646</span></span></p>
+
+    <div class="message-pg text-center">
+        <img src="assets/img/search2.png" class="img-fluid" alt="">
+      <div>
+        <div class="my-title-22">Oops! Looks like the page is missing.</div>
+        <p>Use the search bar to find what you're looking for or try navigating back to our homepage.</p>
+        <div class="search-input" style="display: block;">
+            <form action="" class="flex-center">
+               <input type="search" name="" id="" placeholder="Search" required="">
+               <button type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                     <path d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667ZM14 14l-2.9-2.9" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                     </path>
+                  </svg>
+               </button>
+            </form>
+         </div>
+      </div>
+    </div>
+
+</div>
+
+   <!-- footer -->
+   <footer>
+      <div class="container">
+         <div class="text-center">
+            <a href="#"><img src="https://themoneyflow.net/wp-content/uploads/2023/06/logo.webp" alt="" class="img-fluid"></a>
+         </div>
+         <div class="footer-catg flex-center">
+            <strong># TRENDING</strong>
+            <ul class="flex menu">
+               <li><a href="single-pg.html">Business</a></li>
+               <li><a href="#">Investing</a></li>
+               <li><a href="#">Cryptocurrency</a></li>
+               <li><a href="#">Wallet</a></li>
+               <li><a href="#">Banking</a></li>
+            </ul>
+         </div>
+
+         <div class="footer-nav flex-between">
+            <ul class="flex menu">
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">Privacy Policy</a></li>
+               <li><a href="#">Terms of Use</a></li>
+            </ul>
+            <div class="mail-to flex">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" viewBox="0 0 512 512"><path d="M255.4 48.2c.2-.1.4-.2.6-.2s.4.1.6.2l204 145.8c2.1 1.5 3.4 3.9 3.4 6.5v13.6L291.5 355.7c-20.7 17-50.4 17-71.1 0L48 214.1v-13.6c0-2.6 1.2-5 3.4-6.5zM48 276.2l142 116.6c38.4 31.5 93.7 31.5 132 0l142-116.6V456c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8zM256 0c-10.2 0-20.2 3.2-28.5 9.1l-204 145.8C8.7 165.4 0 182.4 0 200.5V456c0 30.9 25.1 56 56 56h400c30.9 0 56-25.1 56-56V200.5c0-18.1-8.7-35.1-23.4-45.6L284.5 9.1C276.2 3.2 266.2 0 256 0"/></svg>
+               <a href="mailto:themoneyflow.net@gmail.com">themoneyflow.net@gmail.com</a>
+            </div>
+         </div>
+
+         <p class="disclaimer"><strong>Disclaimer</strong> : The information available on the website is only for informational motives therefore The Money Flow is not liable for any loss or infringement. The risk or damage is contingent on how you use the website. Also, We would like to clarify that through this website, you may connect to the other website which is not under our control. We have no authority on the nature, content or availability of these sites.
+         </p>
+            <div class="flex-between copywrite">
+                <p>© 2024 themoneyflow.net All Rights Reserved. </p>
+                  <ul class="social-media flex">
+                     <li>
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg"  height="15" width="15" viewBox="0 0 320 512"><path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path></svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg"  height="15" width="15" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"></path></svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg"  height="15" width="15" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"></path></svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3M447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path></svg>
+                        </a>
+                     </li>
+                  </ul>
+            </div>
+      </div>
+   </footer>
+
+      <button id="myBtn" title="Go to top">
+         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="#FFF"><path d="M2.721 10.816 1.905 10a.88.88 0 0 1 0-1.247l7.144-7.146a.88.88 0 0 1 1.247 0l7.142 7.142a.88.88 0 0 1 0 1.247l-.816.816a.88.88 0 0 1-1.261-.015l-4.216-4.425v10.565a.88.88 0 0 1-.882.882H9.087a.88.88 0 0 1-.882-.882V6.372L3.982 10.8a.876.876 0 0 1-1.261.015Z"/></svg>
+      </button>
+
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

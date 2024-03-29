@@ -10,8 +10,6 @@ search_btn.addEventListener('click', function () {
     search_input.style.display = search_input.style.display === "block" ? "none" : "block";
 });
 
-
-
 // bottom to top btn js
 // Get the button
 if (document.querySelector('#myBtn')) {
@@ -34,7 +32,6 @@ if (document.querySelector('#myBtn')) {
       document.documentElement.scrollTop = 0;
     });
     }
-
 
     // ============================================
     // menu-toggle
@@ -70,7 +67,6 @@ function disableScroll() {
 function enableScroll() {
   document.body.style.overflow = 'auto';
 }
-
 
 // my js dropdown
 const dropdowns = document.querySelectorAll(".dropdown");
